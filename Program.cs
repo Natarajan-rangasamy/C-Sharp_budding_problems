@@ -57,7 +57,7 @@
          }
          Console.WriteLine("\nEven numbers");
          foreach (int num in even) { Console.Write(num + " "); }*/
-        //Functions
+        
 
     }
 }
