@@ -1,4 +1,5 @@
-﻿internal class Program
+﻿
+internal class Program
 {
     private static void Main(string[] args)
     {
@@ -57,7 +58,38 @@
          }
          Console.WriteLine("\nEven numbers");
          foreach (int num in even) { Console.Write(num + " "); }*/
+        /* Console.WriteLine("Calculating Area of the Triangele");
+         Console.WriteLine("Enter the base of the Triangle");
+         int baseOfT = Convert.ToInt32(Console.ReadLine());
+         Console.WriteLine("Enter the Height of the Triangle");
+         int height = Convert.ToInt32(Console.ReadLine());
+         calculateAreaOfTriangle(baseOfT, height);*/
+        //sum of int array
+      /*  int[] arr = new int[] {};
+        int res = sumOfIntArray(arr);
+        if (res <= -1)
+        {
+            Console.WriteLine("Empty Array");
+        }
+        else {Console.WriteLine(res); }*/
         
+    }
 
+    private static int sumOfIntArray(int[] arr)
+    {   
+        if(arr.Length == 0)
+        {
+            return -1;
+        }
+        int sum = 0;
+        foreach (int i in arr) { 
+            sum += i;
+        }
+        return sum;
+    }
+
+    private static void calculateAreaOfTriangle(int baseOfT, int height)
+    {
+        Console.WriteLine($"Area of Triangle is {(baseOfT * height)/2}");
     }
 }
