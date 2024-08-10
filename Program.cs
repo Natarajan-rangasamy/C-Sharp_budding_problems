@@ -65,14 +65,36 @@ internal class Program
          int height = Convert.ToInt32(Console.ReadLine());
          calculateAreaOfTriangle(baseOfT, height);*/
         //sum of int array
-      /*  int[] arr = new int[] {};
-        int res = sumOfIntArray(arr);
-        if (res <= -1)
-        {
-            Console.WriteLine("Empty Array");
-        }
-        else {Console.WriteLine(res); }*/
+        /*  int[] arr = new int[] {};
+          int res = sumOfIntArray(arr);
+          if (res <= -1)
+          {
+              Console.WriteLine("Empty Array");
+          }
+          else {Console.WriteLine(res); }*/
+        //Prime number program in C#
+        Console.WriteLine("Enter the to check whether it's a prime number or not");
+        int num = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(isPrime(num)); 
         
+    }
+
+    private static bool isPrime(int num)
+    {
+        if (num <= 1)
+        {
+            return false;
+        }
+        else if (num <= 3) {
+            return true;
+        }
+        for (int i = 2; i <= num / 2; i++) { 
+            if(num%i == 0)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     private static int sumOfIntArray(int[] arr)
