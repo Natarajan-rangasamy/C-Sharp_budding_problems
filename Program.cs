@@ -90,6 +90,6 @@ internal class Program
 
     private static void calculateAreaOfTriangle(int baseOfT, int height)
     {
-        Console.WriteLine($"Area of Triangle is {(baseOfT * height)/2}");
+        Console.WriteLine($"Area of Triangle is: {(baseOfT * height)/2}");
     }
 }
